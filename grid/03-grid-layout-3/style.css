@@ -27,9 +27,11 @@
 }
 
 .logo {
+  justify-self: start;
 }
 
 .menu {
+  align-self: center;
 }
 
 .menu ul {
@@ -59,6 +61,7 @@
 }
 
 .photo  {
+  align-items: center;
 }
 
 .sidebar .side-content {
@@ -66,6 +69,8 @@
   color: black;
   font-size: 16px;
   font-weight: normal;
+  display: grid;
+  align-items: center;
 }
 
 .nav {
@@ -87,6 +92,9 @@
   background-color: #bccbde;
   grid-column: 2/3;
   grid-row: 3/4;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px
 }
 
 .article p {
@@ -100,6 +108,7 @@
   background-color: #FFFFFF;
   color: black;
   text-align: center;
+  height: 200px;
 }
 
 .card p {
@@ -116,7 +125,6 @@
 .footer {
   background-color: #393f4d;
   grid-column: span 2;
-  grid-row: 4/5;
 }
 
 .footer p {
